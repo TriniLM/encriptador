@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+*::selection{
+    background-color: transparent;
+}
+
+main{
+    background-image: url(/imagen/4.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+}
+.conten-main{
+    width: 100%;
+    height: 100;
+    background-color:rgba(0, 0, 0, 0.171);
+    padding: 45px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.texto-encriptar{
+    width: 70%;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    flex-direction:column;
+    
+}
+.img-logo{
+    width: 50px;
+
+}
+.nombre-logo{
+    width: 20px;
+    color: white;
+    font-size:20px ;
+    margin-bottom: 20px;
+}
+.nombre-logo span{
+    color: green;
+}
+
+.ingresar-texto{
+    width: 100%;
+
+}
+.conten-encritar-texto{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+.textareaTexto{
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: white;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.textareaTexto::selection{
+    background-color: green;
+}
+.ingresar-texto::placeholder{
+ color:white;
+}
+
+.encriptar-btn{
+    text-align: center;
+}
+.encriptar-btn button{
+    width: 240px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+.conten-texto-encriptado{
+    width: 30%;
+    display: flex;
+    height: 600px;
+    margin-left: 10px;
+    justify-content: center;
+
+}
+.texto-encriptado{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border: 2px rgba(255, 255, 255, 0.486) solid;
+    outline: none;  
+}
+
+#encriptarBtn{
+    background-color: green;
+    color: white;
+    border: white 2px solid;
+    
+}
+#desencriptarBtn{
+    background-color: #ffffff;
+    border: 2px solid green;
+    color: green;
+}
+.conten-items{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.texto-encriptado-img{
+    width: 150px;
+    transform: rotate(10deg);
+    opacity: 0.7;
+}
+.texto-encriptado-textouno{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0px 10px 0px; 
+}
+.texto-encriptado-textodos{
+    font-size: 15px;
+}
+#conten-texto{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+#texto-realizado{
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+   font-weight: 400;
+   color: rgb(0, 196, 0);
+   background-color:transparent;
+   border: none;
+   outline: none;
+}
+.button-copiar {
+    width: 100%;
+    height: 40px;
+   ;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.btn{
+    margin: 8px;
+    color:rgb(2, 194, 20);
+}
+#limpiar{
+    color:rgb(2, 194, 20);
+}
+.button-copiar i{
+    font-size: 20px;
+}
+.nomayusculas{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nomayusculas .fa-solid{
+    margin-right:5px;
+    color: orange;
+}
+
+/*responsi desing*/
+
+@media screen and (max-width:840px) {
+     .conten-main{
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+     }
+     .texto-encriptar{
+        width: 100%;
+        padding:0;
+   
+    }
+    .textareaTexto{
+        width: 95%;
+        height: 100%;
+    }
+    .conten-texto-encriptado{
+        width: 100%;
+        height: 250px;
+        margin: 0;
+    }
+    #encriptarBtn{
+        width: 40%;
+    }
+    #desencriptarBtn{
+        width: 40%;
+    }
+  .texto-encriptado-img{
+    width:25% ;
+  }
+  .texto-encriptado-textouno{
+    width: 60%;
+    font-size: 80%;
+  }
+  .texto-encriptado-textodos{
+    font-size: 65%;
+  }
+  .encriptar-btn button{
+    margin: 15px;
+  }
+
+  .nomayusculas p{
+    color: white;
+    font-size:8px ;
+    display: inline-block;
+    
+  }
+
+}
+@media screen and (min-width:840px) and ( max-width:1280px){
+    .texto-encriptar{
+        width: 60%;
+
+   
+    }
+    .conten-texto-encriptado{
+        width: 40%;
+        height: 450px;
+        
+    }
+    #encriptarBtn{
+        width: 40%;
+    }
+    #desencriptarBtn{
+        width: 40%;
+    }
+    .nomayusculas p{
+        color: white;
+        font-size:10px ;
+        display: inline-block;
+        
+      }
+}
+
+.button-copiar i:active{
+    font-size: 15px;
+}

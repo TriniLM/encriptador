@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Encrypter</title>
+    <link rel="icon" href="imagen/huella-dactilar.png">
+    <link rel="stylesheet" href="stylos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,300&family=Open+Sans:wght@400;600;800&family=Roboto+Mono:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/11a7ca8e38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main role="main">
+    <div class="conten-main">
+        <div class="texto-encriptar">  
+            <div class="conten-logo">
+                <img src="imagen/logo-white.png" alt="" class="img-logo">
+                 <h1 class="nombre-logo"> <span> Master </span> Encrypter</h1>
+            </div> 
+             <div class="ingresar-texto">
+                <div class="conten-encritar-texto">
+                    <textarea class="ingresar-texto textareaTexto" placeholder="Ingresa el texto aquí" id="textoRecivido"></textarea>
+                </div>
+                <div class="nomayusculas">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Solo letras minúsculas y sin acento</p>
+                </div>
+                <div class="encriptar-btn">
+                    <button id="encriptarBtn">Encriptar</button>
+                    <button id="desencriptarBtn">Desencriptar</button>
+                </div>
+             </div>
+        </div>
+        <div class="conten-texto-encriptado">
+            <div class="texto-encriptado" id="textoEncriptado" contenteditable="false">
+                <div id="conten-texto" contenteditable="false">
+                    <textarea id="texto-realizado" readonly ></textarea>
+                    <div class="button-copiar">
+                        <div class="btn copiar">
+                            <i class="fa fa-copy" id="copiar"></i>
+                            <p id="Copiar-btn">Copiar</p>
+                        </div>
+                        <div class="button-limpiar btn" id="limpiar">
+                            <i class="fa-solid fa-trash"></i>
+                            <p>Limpiar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+               <div class="conten-items" id="conten-items">
+                    <img src="imagen/espionaje.png" class="texto-encriptado-img">
+                    <p class="texto-encriptado-textouno">Ningún mensaje fue encontrado</p>
+                    <p class="texto-encriptado-textodos">Ingrese el texto que desea encriptar o desencriptar.</p>
+                </div>
+               
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </div>
+    </main>
+</body>
+</html>
